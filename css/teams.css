@@ -5,13 +5,14 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
+
 .team-section
 {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    background: #131419;
+    background: #fff;
     min-height: 100vh; 
 }
 
@@ -126,7 +127,7 @@
     font-size:24px;
 }
 .team-section2{
-    background: #131419;
+    background: #fff;
 }
 h2 {
     display:inline-block;

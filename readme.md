@@ -7,7 +7,8 @@
 - [National Service Scheme - Velammal Engineering College](#national-service-scheme---velammal-engineering-college)
   - [Table of Contents](#table-of-contents)
   - [Installation](#installation)
-  - [Features of Website](#features-of-website)
+  - [Folder Structure](#folder-structure)
+    - [Folder and File Descriptions](#folder-and-file-descriptions)
   - [Contributing](#contributing)
   - [License](#license)
 
@@ -17,7 +18,7 @@ To set up the project locally, follow these steps:
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/your-username/nss-vec.git
+    git clone https://github.com/Saravanakumar2003/NSS-Frontend
     ```
 2. Navigate to the project directory:
     ```sh
@@ -25,19 +26,32 @@ To set up the project locally, follow these steps:
     ```
 3. Open the `index.html` file in your browser.
 
-## Features of Website
+## Folder Structure
 
-1. Logins for volunteers, teachers, and admins.
-2. Event lists with options to upload photos and videos.
-3. Newsletter uploads.
-4. Notifications on the homepage for viewers and on the dashboard for logged-in users.
-5. Volunteer list with details available for admins and soon for teachers.
-6. Teacher list accessible to admins only.
-7. Admins & Teachers can suspend any unknown sign-ons.
-8. Admins can add new events, newsletters, and notifications.
-9. Forum for discussions.
-10. And more coming soon!!
+The project has the following structure:
 
+
+### Folder and File Descriptions
+
+- **audios/**: Contains audio files used in the project.
+- **css/**: Contains CSS files for styling different parts of the website.
+  - `flippingCard.css`: Styles for the flipping card component.
+  - `gallery.css`: Styles for the gallery page.
+  - `lightbox.min.css`: Styles for the lightbox component.
+  - `main.css`: Main stylesheet for the website.
+  - `podcast.css`: Styles for the podcast page.
+  - `teams.css`: Styles for the teams page.
+- **gallery.html**: HTML file for the gallery page.
+- **img/**: Contains image files used in the project.
+  - `podcast/`: Subfolder containing images related to podcasts.
+- **index.html**: The main HTML file for the website.
+- **js/**: Contains JavaScript files for adding interactivity to the website.
+  - `main.js`: Main JavaScript file for the website.
+- **pdf/**: Contains PDF files used in the project.
+- **podcast.html**: HTML file for the podcast page.
+- **readme.md**: The README file you are currently reading.
+- **team.html**: HTML file for the team page.
+- **videos/**: Contains video files used in the project.
 
 ## Contributing
 

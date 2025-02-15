@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- favicon -->
-    <link rel="shortcut icon" href="./img/Nss.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="./assets/img/Nss.png" type="image/x-icon" />
 
     <!-- icons -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -49,7 +49,7 @@
 
 <!-- navbar start -->
 <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(202, 192, 192);">
-    <img class="navbar-brand" src="./img/Nss.png" alt="nss-logo-png" width="55.4rem" height="60.4rem" />
+    <img class="navbar-brand" src="./assets/img/Nss.png" alt="nss-logo-png" width="55.4rem" height="60.4rem" />
     <a id="mmmut-tag" href=index.html>National Service Scheme<br>Velammal Engineering College</a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -69,19 +69,14 @@
                 <a class="nav-link" href="gallery.html"><i class="fa fa-image"></i> Gallery</a>
             </li>
             <li class="nav-item">
+                <a class="nav-link" href="events.html"><i class="fa fa-calendar"></i> Events</a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="podcast.html"><i class="fa fa-microphone"></i> Podcast</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="dashboard-button">
-                    <i class="fa fa-dashboard"></i> Dashboard
-                </a>
+                <a class="nav-link" href="dashboard.html"><i class="fa fa-dashboard"></i> Dashboard</a>
             </li>
-
-            <script>
-                document.getElementById('dashboard-button').addEventListener('click', function () {
-                    window.location.href = 'https://nssvec1.vercel.app/';
-                });
-            </script>
         </ul>
     </div>
 </nav>
@@ -101,11 +96,73 @@
                 </div>
             </div>
         </div>
-        
 
-        
+
+        <div id="gallery">
+            <!-- <figure>
+                <div>
+                    <div>
+                        <h2>Note</h2>
+                        <p>Scroll Animation!</p>
+                        <p><br><small>Related work : <br><a target="_blank"
+                                    href="https://codepen.io/wakana-k/pen/oNJxbPw">Hover animation version</a></small>
+                        </p>
+                    </div>
+                </div>
+            </figure> -->
+            <figure>
+                <img src="https://i.postimg.cc/pd45rS8v/Slider-7.jpg">
+                <figcaption>Ecoshore 1.0</figcaption>
+            </figure>
+            <figure>
+                <img src="https://i.postimg.cc/xTL197xM/Slider3.jpg">
+                <figcaption>Ecoshore 2.0</figcaption>
+            </figure>
+            <figure>
+                <img src="https://i.postimg.cc/RFt6HTQH/Slider4.jpg">
+                <figcaption>Viyal (old Age Home Visit)</figcaption>
+            </figure>
+            <figure>
+                <img src="https://i.postimg.cc/VvcSBbDH/Slider5.jpg">
+                <figcaption>Blood Camp 2024</figcaption>
+            </figure>
+            <figure>
+                <img src="https://i.postimg.cc/wjWm8Mj7/Slider6.jpg">
+                <figcaption>Eye Awarenss Rally</figcaption>
+            </figure>
+        </div>
+
     </section>
     <!-- section 1 ends -->
+
+    <script>
+
+        "use strict";
+        (function () {
+            window.onload = () => {
+                const obj = document.querySelector("#gallery");
+                const time = 10000;
+                function animStart() {
+                    if (obj.classList.contains("active") == false) {
+                        obj.classList.add("active");
+                        setTimeout(() => {
+                            animEnd();
+                        }, time);
+                    }
+                }
+                function animEnd() {
+                    obj.classList.remove("active");
+                    obj.offsetWidth;
+                }
+                document.addEventListener("scroll", function () {
+                    // scroll or scrollend
+                    animStart();
+                });
+                window.addEventListener("resize", animStart);
+                animStart();
+            };
+        })();
+    </script>
 
 
     <!-- section 3 ends -->

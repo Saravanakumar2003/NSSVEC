@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- favicon -->
-    <link rel="shortcut icon" href="./img/Nss.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="./assets/img/Nss.png" type="image/x-icon" />
 
     <!-- icons -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -48,7 +48,7 @@
 
 <!-- navbar start -->
 <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(202, 192, 192);">
-    <img class="navbar-brand" src="./img/Nss.png" alt="nss-logo-png" width="55.4rem" height="60.4rem" />
+    <img class="navbar-brand" src="./assets/img/Nss.png" alt="nss-logo-png" width="55.4rem" height="60.4rem" />
     <a id="mmmut-tag" href=index.html>National Service Scheme<br>Velammal Engineering College</a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -68,19 +68,14 @@
                 <a class="nav-link" href="gallery.html"><i class="fa fa-image"></i> Gallery</a>
             </li>
             <li class="nav-item">
+                <a class="nav-link" href="events.html"><i class="fa fa-calendar"></i> Events</a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="podcast.html"><i class="fa fa-microphone"></i> Podcast</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="dashboard-button">
-                    <i class="fa fa-dashboard"></i> Dashboard
-                </a>
+                <a class="nav-link" href="dashboard.html"><i class="fa fa-dashboard"></i> Dashboard</a>
             </li>
-
-            <script>
-                document.getElementById('dashboard-button').addEventListener('click', function () {
-                    window.location.href = 'https://nssvec1.vercel.app/';
-                });
-            </script>
         </ul>
     </div>
 </nav>
@@ -100,7 +95,7 @@
         <section class="podcast">
             <!-- Episode 1 -->
             <div class="episode">
-                <img src="img/podcast/epdisode1.png" alt="Episode 1 Thumbnail">
+                <img src="assets/img/podcast/epdisode1.png" alt="Episode 1 Thumbnail">
                 <div class="episode-info">
                     <h3>Episode 1: Celebrating the Missile Man of India</h3>
                     <p><strong>Host:</strong> Sharumathi & Deva</p>
@@ -113,6 +108,22 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Episode 2 -->
+            <div class="episode">
+                <img src="assets/img/podcast/episode2.png" alt="Episode 2 Thumbnail">
+                <div class="episode-info">
+                    <h3>Episode 2: Timeless wisdom of Thiruvalluvar</h3>
+                    <p><strong>Host:</strong> Sandhya</p>
+                    <p><strong>Description:</strong> The legendary poet-philosopher who gifted the world the invaluable Thirukkural—a treasure trove of life lessons💫, prosperity✨, and virtue. Let's celebrate Thiruvalluvar Day on January 15 with gratitude and pride💪🏻 for his enduring legacy.</p>
+                    <p><strong>Release Date:</strong> January 15, 2024</p>
+                    <p><strong>Duration:</strong> 4.20 minutes</p>
+                    <div class="buttons">
+                        <button onclick="openModal('audio2')">Play Audio</button>
+                        <button onclick="openModal('video2')">Play Video</button>
+                    </div>
+                </div>
+            </div>
         </section>
     </div>
 
@@ -122,7 +133,7 @@
         <div class="modal-content">
             <span class="close" onclick="closeModal('audio1')">&times;</span>
             <audio controls>
-                <source src="audios/Episode1.mp3" type="audio/mp3">
+                <source src="assets/audios/Episode1.mp3" type="audio/mp3">
                 Your browser does not support the audio element.
             </audio>
         </div>
@@ -133,7 +144,7 @@
         <div class="modal-content">
             <span class="close" onclick="closeModal('video1')">&times;</span>
             <video controls>
-                <source src="videos/Episode1.mp4" type="video/mp4">
+                <source src="assets/videos/Episode1.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
@@ -143,9 +154,8 @@
     <div id="audio2" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal('audio2')">&times;</span>
-            <h2>Episode 2: Sustainable Initiatives (Audio)</h2>
             <audio controls>
-                <source src="audio/episode2.mp3" type="audio/mp3">
+                <source src="assets/audios/Episode2.mp3" type="audio/mp3">
                 Your browser does not support the audio element.
             </audio>
         </div>
@@ -155,9 +165,8 @@
     <div id="video2" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal('video2')">&times;</span>
-            <h2>Episode 2: Sustainable Initiatives (Video)</h2>
             <video controls>
-                <source src="video/episode2.mp4" type="video/mp4">
+                <source src="assets/videos/Episode2.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
